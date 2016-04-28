@@ -1,6 +1,9 @@
 lapis = require "lapis"
 db = require "lapis.db"
 schema = require "lapis.db.schema"
+util = require "lapis.util"
+import to_json from util
+
 
 import create_table, types from schema
 
@@ -14,25 +17,29 @@ class App extends lapis.Application
         }
 
     "/api/v1/comuni/:ricerca": =>
+        res = db.query "select * from comuni where nome LIKE CONCAT(?,'%') LIMIT 20", @params.ricerca
+
         {
             json: {
                 success: true
-                comuni: "lista dei comuni"
+                comuni: res
             }
         }
 
     "/api/v1/comuni/id/:id": =>
+        res = db.query "select * from comuni where id = ?", @params.id
         {
             json: {
                 success: true
-                comune: "tutti i dati del comune"
+                comune: res
             }
         }
 
-    "/api/v1/comuni/name/:name": =>
+    "/api/v1/comuni/nome/:name": =>
+        res = db.query "select * from comuni where nome = ?", @params.name
         {
             json: {
                 success: true
-                comune: "tutti i dati del comune"
+                comune: res
             }
         }
