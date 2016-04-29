@@ -8,6 +8,10 @@ api-questura:
     - "8080"
   links:
    - db
+  entrypoint:
+      - /usr/local/bin/lapis
+      - server
+      - production
   environment:
     - VIRTUAL_HOST=questura.hypertesto.me
     - LETSENCRYPT_HOST=ypertesto.me,git.hypertesto.me,seedbox.hypertesto.me,questura.hypertesto.me
