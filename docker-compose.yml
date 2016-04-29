@@ -14,7 +14,8 @@ api-questura:
       - production
   environment:
     - VIRTUAL_HOST=questura.hypertesto.me
-    - LETSENCRYPT_HOST=ypertesto.me,git.hypertesto.me,seedbox.hypertesto.me,questura.hypertesto.me
+    - VIRTUAL_PORT=80
+    - LETSENCRYPT_HOST=hypertesto.me,git.hypertesto.me,seedbox.hypertesto.me,questura.hypertesto.me
     - LETSENCRYPT_EMAIL=info@hypertesto.me
 
 db:
