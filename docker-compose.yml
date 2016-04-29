@@ -1,5 +1,5 @@
 api-questura:
-  image: gold/ghost
+  image: abaez/lapis
   container_name: api-quesura
   volumes:
     - "./:/app"
