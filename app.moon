@@ -3,9 +3,8 @@ db = require "lapis.db"
 schema = require "lapis.db.schema"
 util = require "lapis.util"
 import to_json from util
+import escape from util
 
-
-import create_table, types from schema
 
 class App extends lapis.Application
     "/": =>
