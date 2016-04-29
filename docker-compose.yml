@@ -1,0 +1,25 @@
+api-questura:
+  image: gold/ghost
+  container_name: api-quesura
+  volumes:
+    - "./:/app"
+  expose:
+    - "80"
+    - "8080"
+  links:
+   - db
+  environment:
+    - VIRTUAL_HOST=questura.hypertesto.me
+    - LETSENCRYPT_HOST=ypertesto.me,git.hypertesto.me,seedbox.hypertesto.me,questura.hypertesto.me
+    - LETSENCRYPT_EMAIL=info@hypertesto.me
+
+db:
+    image: mariadb
+    container_name: questura-db
+    environment:
+        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_DATABASE=questura
+        - MYSQL_USER=questura
+        - MYSQL_PASSWORD=questura
+    volumes:
+        -"./migrations:/docker-entrypoint-initdb.d"
