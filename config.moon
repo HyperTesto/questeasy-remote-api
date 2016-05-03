@@ -13,8 +13,10 @@ config "production", ->
 
 
 config "development", ->
+    port 8080
+    code_cache "on"
     mysql ->
-        host "127.0.0.1"
-        user "root"
-        password "root"
+        host os.getenv "QUESTURA_DB_PORT_3306_TCP_ADDR"
         database "questura"
+        user "questura"
+        password "questura"
