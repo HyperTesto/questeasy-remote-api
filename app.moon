@@ -43,11 +43,10 @@ class App extends lapis.Application
             }
         }
     "/api/v1/documenti/:str": =>
-        res = db.query "select * from documenti where nome LIKE CONCAT(?,'%') LIMIT 20", @params.str
+        res = db.query "select * from documenti where nome LIKE CONCAT(?,'%') ORDER BY nome LIMIT 20", @params.str
         {
             json: {
                 success: true
                 comune: res
             }
         }
-
