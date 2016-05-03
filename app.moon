@@ -16,7 +16,7 @@ class App extends lapis.Application
         }
 
     "/api/v1/comuni/:ricerca": =>
-        res = db.query "select * from comuni where nome LIKE CONCAT(?,'%') LIMIT 20", @params.ricerca
+        res = db.query "select * from comuni where nome LIKE CONCAT(?,'%') LIMIT 20", util.unescape @params.ricerca
 
         {
             json: {
@@ -35,7 +35,7 @@ class App extends lapis.Application
         }
 
     "/api/v1/comuni/nome/:name": =>
-        res = db.query "select * from comuni where nome = ?", @params.name
+        res = db.query "select * from comuni where nome = ?", util.unescape @params.name
         {
             json: {
                 success: true
@@ -43,7 +43,7 @@ class App extends lapis.Application
             }
         }
     "/api/v1/documenti/:str": =>
-        res = db.query "select * from documenti where nome LIKE CONCAT(?,'%') ORDER BY nome", @params.str
+        res = db.query "select * from documenti where nome LIKE CONCAT(?,'%') ORDER BY nome", util.unescape @params.str
         {
             json: {
                 success: true
