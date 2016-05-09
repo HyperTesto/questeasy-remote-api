@@ -5,8 +5,11 @@
 
 ## API
 
+### /api/v1/cittadinanza/:str
+Ritorna i primi 20 stati che iniziano con la stringa str
+
 ### /api/v1/comuni/:str
-Ritorna i primi 20 comuni che iniziano con la stringa str
+Ritorna i primi 20 luoghi (comuni e stati) che iniziano con la stringa str
 
 ### /api/v1/comuni/nome/:str
 Ritorna info complete comune dato il nome (Buggato al momento)
