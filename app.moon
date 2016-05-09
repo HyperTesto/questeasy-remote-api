@@ -47,6 +47,14 @@ class App extends lapis.Application
         {
             json: {
                 success: true
-                comune: res
+                documenti: res
+            }
+        }
+    "/api/v1/cittadinanza/:str": =>
+        res = db.query "select * from comuni where nome LIKE CONCAT(?,'%') AND isState=1 ORDER BY nome", util.unescape @params.str
+        {
+            json: {
+                success: true
+                stati: res
             }
         }
