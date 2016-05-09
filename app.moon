@@ -51,7 +51,7 @@ class App extends lapis.Application
             }
         }
     "/api/v1/cittadinanza/:str": =>
-        res = db.query "select * from comuni where nome LIKE CONCAT(?,'%') AND isState=1 ORDER BY nome", util.unescape @params.str
+        res = db.query "select nome, id from comuni where nome LIKE CONCAT(?,'%') AND isState=1 ORDER BY nome", util.unescape @params.str
         {
             json: {
                 success: true
