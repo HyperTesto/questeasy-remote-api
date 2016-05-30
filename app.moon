@@ -58,3 +58,11 @@ class App extends lapis.Application
                 stati: res
             }
         }
+    
+    "/api/v1/stats/": respond_to {
+      GET: =>
+        "Show usage stats."
+
+      POST: =>
+        "Update stats to DB"
+    }
