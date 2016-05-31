@@ -997,7 +997,7 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('401003531','CASALEGGIO CAS
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('401003532','CASTELLI CUSIANI (NO)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('401003533','CASTIGLIONE D\'OSSOLA (NO)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('401003534','CAVAGLIO SAN DONNINO (NO)',0);
-END;
+COMMIT;
 BEGIN;
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('401003535','CAVANDONE (NO)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('401003536','CHIGNOLO VERBANO (NO)',0);
@@ -1949,7 +1949,7 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('402007001','ALLEIN (AO)',0
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('402007002','ANTEY SAINT ANDRE\' (AO)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('402007003','AOSTA (AO)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('402007004','ARNAD (AO)',0);
-END;
+COMMIT;
 BEGIN;
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('402007005','ARVIER (AO)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('402007006','AVISE (AO)',0);
@@ -3970,7 +3970,7 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('403018107','PALESTRO (PV)'
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('403018108','PANCARANA (PV)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('403018109','PARONA (PV)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('403018110','PAVIA (PV)',0);
-END;
+COMMIT;
 BEGIN;
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('403018111','PIETRA DE\' GIORGI (PV)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('403018112','PIEVE ALBIGNOLA (PV)',0);
@@ -5017,7 +5017,7 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('404022114','MEZZANA (TN)',
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('404022115','MEZZANO (TN)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('404022116','MEZZOCORONA (TN)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('404022117','MEZZOLOMBARDO (TN)',0);
-END;
+COMMIT;
 BEGIN;
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('404022118','MOENA (TN)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('404022119','MOLINA DI LEDRO (TN)',0);
@@ -6058,7 +6058,7 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('406030090','REANA DEL ROIA
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('406030091','REMANZACCO (UD)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('406030092','RESIA (UD)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('406030093','RESIUTTA (UD)',0);
-END;
+COMMIT;
 BEGIN;
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('406030094','RIGOLATO (UD)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('406030095','RIVE D\'ARCANO (UD)',0);
@@ -7086,7 +7086,7 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('408040031','PORTICO E SAN 
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('408040032','PREDAPPIO (FO)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('408040033','PREMILCUORE (FO)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('408040036','ROCCA SAN CASCIANO (FO)',0);
-END;
+COMMIT;
 BEGIN;
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('408040037','RONCOFREDDO (FO)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('408040041','SAN MAURO PASCOLI (FO)',0);
@@ -7997,7 +7997,7 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('412057012','CASPERIA (RI)'
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('412057013','CASTEL DI TORA (RI)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('412057014','CASTELNUOVO DI FARFA (RI)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('412057015','CASTEL SANT\'ANGELO (RI)',0);
-END;
+COMMIT;
 BEGIN;
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('412057016','CITTADUCALE (RI)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('412057017','CITTAREALE (RI)',0);
@@ -8998,7 +8998,7 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('415062053','PONTE (BN)',0)
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('415062054','PONTELANDOLFO (BN)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('415062055','PUGLIANELLO (BN)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('415062056','REINO (BN)',0);
-END;
+COMMIT;
 BEGIN;
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('415062057','SAN BARTOLOMEO IN GALDO (BN)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('415062058','SAN GIORGIO DEL SANNIO (BN)',0);
@@ -9950,7 +9950,7 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('418078113','SAN COSMO ALBA
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('418078114','SAN DEMETRIO CORONE (CS)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('418078115','SAN DONATO DI NINEA (CS)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('418078116','SAN FILI (CS)',0);
-END;
+COMMIT;
 BEGIN;
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('418078117','SANGINETO (CS)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('418078118','SAN GIORGIO ALBANESE (CS)',0);
@@ -11327,4 +11327,4 @@ INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('450501546','VISIGNANO (PL)
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('450501547','VISINADA (PL)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('450502501','LAGOSTA (ZA)',0);
 INSERT INTO `comuni` (`id`,`nome`,`isState`) VALUES ('450502502','ZARA (ZA)',0);
-END;
+COMMIT;
