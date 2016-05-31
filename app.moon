@@ -4,6 +4,7 @@ schema = require "lapis.db.schema"
 util = require "lapis.util"
 import to_json from util
 import escape from util
+import respond_to from require "lapis.application"
 
 
 class App extends lapis.Application
@@ -59,14 +60,13 @@ class App extends lapis.Application
             }
         }
 
-    "/api/v1/crashreport/:id": respond_to {
+    "/api/v1/crashreport": respond_to {
       GET: =>
         "crashreport detail"
 
       POST: =>
-        json_params =>
-          db.insert "crashreport", {
-            id: @params.id
+          db.insert "crashreports", {
+            id: @params.REPORT_ID
             stacktrace: @params.STACK_TRACE
             crash_date: @params.USER_CRASH_DATE
             --TODO: add support to other params
