@@ -58,11 +58,17 @@ class App extends lapis.Application
                 stati: res
             }
         }
-    
-    "/api/v1/stats/": respond_to {
+
+    "/api/v1/crashreport/:id": respond_to {
       GET: =>
-        "Show usage stats."
+        "crashreport detail"
 
       POST: =>
-        "Update stats to DB"
+        json_params =>
+          db.insert "crashreport", {
+            id: @params.id
+            stacktrace: @params.STACK_TRACE
+            crash_date: @params.USER_CRASH_DATE
+            --TODO: add support to other params
+          }
     }
